@@ -7,6 +7,7 @@ BetaBanshee::Application.configure do
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+  config.assets.initialize_on_precompile = false
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
   config.serve_static_assets = false
@@ -73,7 +74,7 @@ BetaBanshee::Application.configure do
   config.action_mailer.default :charset => "utf-8"
   config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
-      port: 3000,
+      port: 3000  ,
       domain: "beta-banshee.heroku.com",
       authentication: "plain",
       enable_starttls_auto: true,
