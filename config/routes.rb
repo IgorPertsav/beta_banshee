@@ -1,7 +1,8 @@
 BetaBanshee::Application.routes.draw do
-  devise_for :users
+  get "pages/home"
+  get "pages/contact"
 
-  match 'logout' => 'devise/sessions#destroy'
+  devise_for :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

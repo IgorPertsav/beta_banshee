@@ -7,7 +7,14 @@ gem 'devise'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :test, :development do
+group :development do
+  gem 'rspec-rails'
+  gem 'sqlite3'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'webrat'
   gem 'sqlite3'
 end
 
