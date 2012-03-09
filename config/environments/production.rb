@@ -78,7 +78,7 @@ BetaBanshee::Application.configure do
       domain: "beta-banshee.heroku.com",
       authentication: "plain",
       enable_starttls_auto: true,
-      user_name: ENV["bansheerelease@gmail.com"],
-      password: ENV["123banshee"]
+      user_name: "bansheerelease@gmail.com",
+      password: "123banshee"
   }
 end
