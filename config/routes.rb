@@ -1,6 +1,7 @@
 BetaBanshee::Application.routes.draw do
   get "pages/home"
   get "pages/contact"
+  get "pages/help"
 
   devise_for :users
 
