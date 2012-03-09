@@ -8,6 +8,13 @@
 </head>
 <body>
 
+<% if !notice.empty? %>
+    <p class="notice"><%= notice %></p>
+<% end %>
+<% if !alert.empty? %>
+    <p class="alert"><%= alert %></p>
+<% end %>
+
 <%= yield %>
 
 </body>
