@@ -1,4 +1,9 @@
 BetaBanshee::Application.routes.draw do
+  match '/contact', :to => 'pages#contact'
+  match '/help',    :to => 'pages#help'
+
+  root :to => 'pages#home'
+
   get "pages/home"
   get "pages/contact"
   get "pages/help"

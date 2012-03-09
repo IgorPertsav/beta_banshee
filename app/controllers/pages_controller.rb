@@ -1,10 +1,10 @@
 class PagesController < ApplicationController
   def home
-    @title = "Banshee Home"
+    @title = "Home"
   end
 
   def contact
-    @title = "Our Contacts"
+    @title = "Contacts"
   end
 
   def help
