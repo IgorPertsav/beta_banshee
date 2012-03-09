@@ -3,12 +3,9 @@ BetaBanshee::Application.routes.draw do
   match '/help',    :to => 'pages#help'
 
   root :to => 'pages#home'
-
-  get "pages/home"
-  get "pages/contact"
-  get "pages/help"
-
   devise_for :users
+  #devise_for :users, :path_names => { :sign_up => "register"}
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
